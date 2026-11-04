@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="my" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>SmartStock — ကုန်ပစ္စည်းစာရင်း စီမံခန့်ခွဲမှုစနစ်</title>
+  <meta name="description" content="SmartStock: offline-first inventory, POS and reports for small retail shops in Myanmar.">
+  <meta name="theme-color" content="#0B223F">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="SmartStock">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">အကြောင်းအရာသို့ ကျော်ရန်</a>
+  <div id="app"></div>
+  <div id="print-area" aria-hidden="true"></div>
+  <div id="modal-root"></div>
+  <div id="toasts" aria-live="polite"></div>
+  <noscript><p style="padding:24px;font-family:sans-serif">SmartStock ကို အသုံးပြုရန် JavaScript ဖွင့်ထားရပါမည်။</p></noscript>
+
+  <!-- Load order matters: utils → storage → settings → domain modules → reports → app -->
+  <script src="app.js"></script>
+</body>
+</html>
